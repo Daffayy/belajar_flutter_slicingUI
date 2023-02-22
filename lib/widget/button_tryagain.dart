@@ -1,24 +1,20 @@
 import 'package:flutter/material.dart';
 
-Widget buildLoginBtn () {
+Widget buildtryagainbutton() {
   return Container(
-    padding: EdgeInsets.symmetric(vertical: 25),
+    padding: EdgeInsets.symmetric(horizontal: 25),
     width: double.infinity,
     child: ElevatedButton(
-
-      onPressed: () => print("Login pressed"),
+      onPressed: () => print("Start try again pressed"),
       child: Text(
-        "LOGIN",
-        style: TextStyle(
-          color: Colors.white,
-        ),
+        " Try again ",
       ),
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.deepOrange,
         shape:
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0),
         ),
-        minimumSize: Size(150.0, 50.0),
+        minimumSize: Size(100.0, 60.0),
       ),
     ),
   );

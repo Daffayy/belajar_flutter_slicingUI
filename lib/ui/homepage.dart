@@ -25,6 +25,7 @@ class _HomepageState extends State<Homepage> {
           length: 2,
           child: Scaffold(
             appBar: AppBar(
+              elevation: 0,
               bottom:PreferredSize(
                 preferredSize: Size.fromHeight(280),
                 child: Container(color: Colors.white,child: myTabBar,),
