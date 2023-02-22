@@ -1,6 +1,7 @@
 # belajar_slicing_ui
 
-A new Flutter project.
+Tampilan aplikasi 
+![photo_2023-02-22_07-45-09](https://user-images.githubusercontent.com/94030266/220491798-80731e10-e57e-4468-b2be-533f7bdb56c9.jpg)
 
 ## Getting Started
 
@@ -15,4 +16,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-![photo_2023-02-22_07-45-09](https://user-images.githubusercontent.com/94030266/220491798-80731e10-e57e-4468-b2be-533f7bdb56c9.jpg)
+
