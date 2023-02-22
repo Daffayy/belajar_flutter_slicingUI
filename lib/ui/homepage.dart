@@ -47,7 +47,7 @@ class _HomepageState extends State<Homepage> {
                   ),
                   SizedBox(height: 10),
                   Text(
-                    "Email Adreess",
+                    "Email Adreess ",
                     textAlign: TextAlign.left,
                     style: TextStyle(
                       color: Colors.grey,
