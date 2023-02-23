@@ -84,7 +84,7 @@ class ActionButtonConfirmWidget extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () => print("Confrim proced press"),
+                    onPressed: () => print("Confrim proced pres"),
                     child: Text(
                       "Proced",
                     ),
