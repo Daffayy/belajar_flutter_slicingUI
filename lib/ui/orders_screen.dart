@@ -1,3 +1,4 @@
+import 'package:belajar_slicing_ui/widget/action_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar_slicing_ui/widget/button_start_offering_widget.dart';
 
@@ -73,7 +74,7 @@ class _OrdersState extends State<Orders> {
               SizedBox(
                 height: 150,
               ),
-              buildStartOfferingBtn()
+              ActionButtonWidget(buttonAction: "Order")
             ],
           ),
         ),
