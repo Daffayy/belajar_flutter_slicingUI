@@ -1,8 +1,8 @@
-import 'package:belajar_slicing_ui/ui/homepage.dart';
-import 'package:belajar_slicing_ui/ui/itemnotfound.dart';
-import 'package:belajar_slicing_ui/ui/nointernetconnection.dart';
+import 'package:belajar_slicing_ui/ui/homepage_screen.dart';
+import 'package:belajar_slicing_ui/ui/itemnotfound_screen.dart';
+import 'package:belajar_slicing_ui/ui/nointernetconnection_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:belajar_slicing_ui/ui/history.dart';
+import 'package:belajar_slicing_ui/ui/history_screen.dart';
 
 
 void main() {

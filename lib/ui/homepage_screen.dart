@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widget/button_forgot.dart';
-import '../widget/button_login.dart';
+import '../widget/button_forgot_widget.dart';
+import '../widget/button_login_widget.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);

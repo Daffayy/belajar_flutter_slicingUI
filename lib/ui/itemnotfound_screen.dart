@@ -27,7 +27,7 @@ class _ItemNotFoundState extends State<ItemNotFound> {
           ),
           leading: IconButton(
             icon: Icon(
-              Icons.arrow_back,
+              Icons.arrow_back_ios_rounded,
               color: Colors.black,
             ),
             onPressed: () {
