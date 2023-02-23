@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widget/button_forgot.dart';
-import '../widget/button_login.dart';
+import '../widget/button_forgot_widget.dart';
+import '../widget/button_login_widget.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -25,6 +25,7 @@ class _HomepageState extends State<Homepage> {
           length: 2,
           child: Scaffold(
             appBar: AppBar(
+              elevation: 0,
               bottom:PreferredSize(
                 preferredSize: Size.fromHeight(280),
                 child: Container(color: Colors.white,child: myTabBar,),
