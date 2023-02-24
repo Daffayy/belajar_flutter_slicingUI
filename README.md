@@ -11,6 +11,11 @@ Tampilan aplikasi
 ![photo_2023-02-22_14-14-12](https://user-images.githubusercontent.com/94030266/220550552-46807ef6-7582-43de-b565-8a9802915082.jpg)
 ## No Internet Connection
 ![photo_2023-02-22_14-19-30](https://user-images.githubusercontent.com/94030266/220550560-628168a5-aad3-49d7-ae51-0f959272eb85.jpg)
+## menu chekcout payment
+![photo_2023-02-24_07-38-34](https://user-images.githubusercontent.com/113774841/221063421-9de89728-1a76-4d6c-8451-0aa622cca0f0.jpg)
+## dialog confirm payment
+![photo_2023-02-24_07-38-46](https://user-images.githubusercontent.com/113774841/221063499-d5749bd0-8df9-42df-b0bf-6f7330560a3f.jpg)
+
 
 
 This project is a starting point for a Flutter application.
