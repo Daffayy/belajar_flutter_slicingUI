@@ -1,3 +1,4 @@
+import 'package:belajar_slicing_ui/ui/food_search_screen.dart';
 import 'package:belajar_slicing_ui/ui/homepage_screen.dart';
 import 'package:belajar_slicing_ui/ui/itemnotfound_screen.dart';
 import 'package:belajar_slicing_ui/ui/nointernetconnection_screen.dart';
