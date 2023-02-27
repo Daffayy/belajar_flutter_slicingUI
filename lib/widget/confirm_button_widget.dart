@@ -107,7 +107,7 @@ class ActionButtonConfirmWidget extends StatelessWidget {
                         Navigator.of(context).pop();
                       },
                       child: Text(
-                        "Proced",
+                        "Proceed",
                       ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepOrange,
