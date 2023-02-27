@@ -86,7 +86,7 @@ class ActionButtonConfirmWidget extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => print("Confrim proced press"),
                     child: Text(
-                      "Proceed ",
+                      "Proceed",
                     ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepOrange,
