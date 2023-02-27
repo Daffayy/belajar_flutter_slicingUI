@@ -98,22 +98,7 @@ class ActionButtonConfirmWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 159,
-                    height: 60,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        print("Confrim proced pres");
-                        Navigator.of(context).pop();
-                      },
-                      child: Text(
-                        "Proceed",
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.deepOrange,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
+
                       ),
                     ),
                   ),
