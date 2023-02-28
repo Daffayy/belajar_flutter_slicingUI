@@ -1,5 +1,6 @@
+import 'package:belajar_slicing_ui/ui/payment_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery/utilities/color_schema.dart';
+import 'package:belajar_slicing_ui/utilities/color_schema.dart';
 
 enum RadioButtonProfile { cardProfile, bankAccountProfile, paypalProfile }
 
@@ -275,7 +276,10 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 40),
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentScreen(),)
+                              );
+                            },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [

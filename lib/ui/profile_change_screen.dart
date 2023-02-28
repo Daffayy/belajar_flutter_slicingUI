@@ -1,8 +1,10 @@
-import 'package:assigment_isi/widgets/fonts_widget.dart';
+import 'package:belajar_slicing_ui/widget/fonts_widget.dart';
+import 'package:belajar_slicing_ui/ui/home_screen.dart';
+import 'package:belajar_slicing_ui/widget/action_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../widgets/button_widget.dart';
+
 
 enum RadioButtonProfile { cardProfile, bankAccountProfile, paypalProfile }
 
@@ -64,7 +66,7 @@ class _ProfileChangeScreenState extends State<ProfileChangeScreen> {
                                 children: [
                                   Container(
                                     alignment: Alignment.topLeft,
-                                    child: Image.asset('assets/img/img_profile.png',
+                                    child: Image.asset('assets/img_profile.png',
                                         height: 60, width: 60),
                                   ),
                                   Padding(
@@ -295,7 +297,7 @@ class _ProfileChangeScreenState extends State<ProfileChangeScreen> {
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 40),
-                          child: const ButtonWidget(textTitle: "Update"),
+                          child: const ActionButtonWidget(buttonAction: "Update", navigationDestination: HomeScreen(),),
                         )
                       ],
                     ),

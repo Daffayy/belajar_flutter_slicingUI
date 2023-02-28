@@ -1,4 +1,6 @@
 
+import 'package:belajar_slicing_ui/ui/home_screen.dart';
+import 'package:belajar_slicing_ui/ui/profile_change_screen.dart';
 import 'package:belajar_slicing_ui/widget/fonts_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +37,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     IconButton(
                         alignment: Alignment.topLeft,
                         padding: const EdgeInsets.only(left: 30, top: 20),
-                        onPressed: () {},
+                        onPressed: () => Navigator(),
                         icon: const Icon(Icons.arrow_back_ios)),
                     const SizedBox(height: 30),
                     const Padding(
@@ -63,7 +65,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 width: 60,
                               ),
                               TextButton(
-                                  onPressed: () {},
+                                  onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                                    return ProfileChangeScreen();
+                                  })),
                                   child: const Text(
                                     "change",
                                     style: TextStyle(
@@ -272,7 +276,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           const SizedBox(
                             height: 50,
                           ),
-                          const ActionButtonWidget(buttonAction: "Update",)
+                          const ActionButtonWidget(buttonAction: "Update",
+                            navigationDestination: HomeScreen(),)
                         ],
                       ),
                     ),

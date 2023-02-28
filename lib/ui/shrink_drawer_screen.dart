@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shrink_sidemenu/shrink_sidemenu.dart';
 
+import '../utilities/color_schema.dart';
+import 'cart_screen.dart';
+import 'home_screen.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
@@ -39,28 +43,36 @@ class _MyHomePageState extends State<MyHomePage> {
         setState(() => isOpened = isOpened);
       },
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          leading: IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () => toggleMenu(),
-          ),
-          title: Text(widget.title),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'Center',
+          appBar: AppBar(
+            elevation: 0,
+            backgroundColor: background,
+            centerTitle: true,
+            leading: IconButton(
+              icon: Icon(
+                Icons.close,
+                color: Colors.grey[400],
               ),
+              onPressed: () => toggleMenu(),
+            ),
+            actions: [
+              IconButton(
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return Cart_Screen();
+                      },
+                    ),
+                  ),
+                  icon: Icon(
+                    Icons.shopping_cart_outlined,
+                    color: Colors.grey[400],
+                  ))
             ],
+            title: Text(widget.title),
           ),
-        ),
-      ),
+          body: HomeScreen()),
     );
   }
-
   Widget buildMenu() {
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(vertical: 50.0),
@@ -106,7 +118,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 dividerListTile(),
                 ListTile(
                   onTap: () {},
-                  leading: SvgPicture.asset('assets/icon/icon_privacy_policy.svg'),
+                  leading:
+                  SvgPicture.asset('assets/icon/icon_privacy_policy.svg'),
                   title: const Text("Privacy Policy",
                       style:
                       TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),

@@ -1,3 +1,4 @@
+import 'package:belajar_slicing_ui/ui/checkout_screen.dart';
 import 'package:belajar_slicing_ui/ui/detail_product_screen.dart';
 import 'package:belajar_slicing_ui/ui/history_screen.dart';
 import 'package:belajar_slicing_ui/widget/action_button_widget.dart';
@@ -89,7 +90,8 @@ class Cart_Screen extends StatelessWidget {
           );
         })),
     ),
-    ActionButtonWidget(buttonAction: 'Complete order'),
+    ActionButtonWidget(buttonAction: 'Complete order', navigationDestination:
+    CheckoutScreen(),),
     SizedBox(
     height: 16,
     )
