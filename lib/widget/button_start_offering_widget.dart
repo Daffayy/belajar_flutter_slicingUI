@@ -1,3 +1,6 @@
+
+
+import 'package:belajar_slicing_ui/ui/menu_food_screen.dart';
 import 'package:flutter/material.dart';
 
 Widget buildStartOfferingBtn() {
@@ -5,7 +8,10 @@ Widget buildStartOfferingBtn() {
     padding: EdgeInsets.symmetric(horizontal: 25),
     width: double.infinity,
     child: ElevatedButton(
-      onPressed: () => print("Start odering pressed"),
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => MenuFoodScreen()),
+        );
+      },
       child: Text(
         "Start odering",
       ),
