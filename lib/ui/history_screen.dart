@@ -1,5 +1,7 @@
+import 'package:belajar_slicing_ui/ui/menu_food_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:belajar_slicing_ui/widget/button_start_offering_widget.dart';
+import 'package:belajar_slicing_ui/utilities/color_schema.dart';
+
 
 
 class History extends StatefulWidget {
@@ -60,7 +62,30 @@ class _HistoryState extends State<History> {
                 style: TextStyle(fontSize: 17,fontFamily: "SFprotext/SF-Pro-Text-Regular.otf"),
               ),
               SizedBox(height: 150,),
-              buildStartOfferingBtn ()
+              InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder:
+                      (context) => MenuFoodScreen(), )
+                  );
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 100,
+                    vertical: 25,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50.0),
+                    color: deepRed700,
+                  ),
+                  child: Text(
+                    "Start odering",
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white),
+                  ),
+                ),
+              )
 
             ],
           ),
