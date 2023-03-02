@@ -16,108 +16,161 @@ class ActionButtonConfirmWidget extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) {
-              return AlertDialog(
-                title: Padding(
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-                  child: Text(
-                    "Please Note",
-                    style: TextStyle(color: Color(0xff000000)),
-                  ),
-                ),
-                content: Container(
-                  margin: EdgeInsets.only(top: 20),
-                  height: 322,
-                  width: 315,
-                  decoration: BoxDecoration(
-                    color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(80),
-                  ),
+              return  Dialog(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50.0)),
+                backgroundColor: Color(0xffffffff),
+                child: Container(
+                  height: 360.0,
+                  width: 500.0,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      ListTile(
-                        title: Container(
-                          child: Wrap(
-                            children: [
-                              Container(
-                                child: Text(
-                                  'DELIVERY TO MAINLAND ',
-                                  style: TextStyle(color: Colors.grey),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 30,
-                              ),
-                              Container(
-                                child: Text("N1000 - N2000"),
-                              ),
-                            ],
-                          ),
+                      Container(
+                        height: 80.0,
+                        width: 500.0,
+                        padding: EdgeInsets.only(top: 20),
+                        decoration: BoxDecoration(
+                          color: Color(0xffededed),
+                            borderRadius: BorderRadius.only(topLeft: Radius
+                                .circular(50), topRight: Radius.circular(50))
+                        ),
+                        child: Padding(
+                          padding:  EdgeInsets.symmetric(horizontal: 40,
+                              vertical: 10),
+                          child: Text("Please Note ", style: TextStyle
+                            (fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            fontFamily: "SFprotext/SF-Pro-Text-Regular",),),
                         ),
                       ),
-                      Divider(color: Colors.black26, indent: 15, endIndent: 20),
-                      ListTile(
-                        title: Container(
-                          child: Wrap(
-                            children: [
-                              Container(
-                                child: Text(
-                                  'DELIVERY TO ISLAND ',
-                                  style: TextStyle(color: Colors.grey),
+                      SizedBox(
+                        width: 10,
+                        height: 30,
+                      ),
+                        Column(
+                          children: [
+                            ListTile(
+                              contentPadding: EdgeInsets.zero,
+                              title: Container(
+                                child: Wrap(
+                                  children: [
+                                    Container(
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric
+                                          (horizontal: 40),
+                                        child: Text(
+                                          "DELIVERY TO MAINLAND",
+                                          style: TextStyle(fontSize: 15,fontFamily:"SFprotext/SF-Pro-Text-Regular" ,color:
+                                          Colors.grey),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 30,
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric
+                                          (horizontal: 40),
+                                        child: Text("N1000 - N2000", style:
+                                        TextStyle(fontSize: 17),),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
-                              SizedBox(
-                                height: 30,
+                            ),
+                            Divider(color: Colors.black26, indent: 40,
+                                endIndent: 30),
+                            ListTile(
+                              contentPadding: EdgeInsets.zero,
+                              title: Container(
+                                child: Wrap(
+                                  children: [
+                                    Container(
+                                      child: Padding(
+                                        padding:   EdgeInsets.symmetric
+                                          (horizontal: 40),
+                                        child: Text(
+                                          "DELIVERY TO ISLAND",
+                                          style: TextStyle(fontSize: 15,fontFamily:"SFprotext/SF-Pro-Text-Regular" ,color:
+                                          Colors.grey),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 30,
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric
+                                          (horizontal: 40),
+                                        child: Text("N2000 - N3000",style:
+                                        TextStyle(fontSize: 17),),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              Container(
-                                child: Text("N2000 - N3000"),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
+                      SizedBox(
+                        width: 50,
+                        height: 40,
+                      ),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          TextButton(
+                            onPressed: (){
+                              print("Confirm cancel press");
+                              Navigator.of(context).pop();
+                            },
+                            child: Padding(
+                              padding:  EdgeInsets.symmetric(horizontal: 30),
+                              child: Text(
+                                "Cancel",
+                                style: TextStyle(color: Colors.grey),
+                              ),
+                            ),
+                            style: TextButton.styleFrom(
+                              backgroundColor: Colors.transparent,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                              ),
+                              minimumSize: Size(50.0, 60.0),
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: (){
+                              print("Confirm proceed press");
+                              Navigator.of(context).pop();
+                            },
+                            child: Padding(
+                              padding:  EdgeInsets.symmetric(horizontal: 50),
+                              child: Text(
+                                "Proceed",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                            style: TextButton.styleFrom(
+                              backgroundColor: Colors.deepOrange,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                              ),
+                              minimumSize: Size(100.0,
+                                  60.0),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-                actions: [
-                  Container(
-                    child: TextButton(
-                      onPressed: () {
-                        print("Confrim cancel press");
-                        Navigator.of(context).pop();
-                      },
-                      child: Text(
-                        "Cancel",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      style: TextButton.styleFrom(
-                        backgroundColor: Color(0xffffffff),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        minimumSize: Size(100.0, 60.0),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 159,
-                    height: 60,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        print("Confrim proced pres");
-                        Navigator.of(context).pop();
-                      },
-                      child: Text(
-                        "Proceed",
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.deepOrange,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
               );
             },
           );

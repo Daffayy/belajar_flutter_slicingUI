@@ -15,7 +15,7 @@ import 'package:belajar_slicing_ui/ui/history_screen.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home : HomeScreen(),
+    home : PaymentScreen(),
   )
   );
 }
